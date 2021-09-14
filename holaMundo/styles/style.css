@@ -1,0 +1,59 @@
+/* Selectores (elemento, clase, id) */
+/* Especificidad de selectores (combinar elemento.clase#id */
+/* rgb(147, 78, 168), */
+
+/* Estilos globales */
+body{
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(130deg ,#ffc0cb, #edff8a, #934ea8);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: sans-serif;
+    /* vh => unidad de medida relativa al alto de la pantalla (viewport height) */
+    /* vw => unidad de medida relativa al ancho de la pantalla (viewport width) */
+    height: 100vh; 
+}
+
+p{
+   color: #222222; 
+   text-align: justify;
+}
+
+.highlighted{
+    background-color: #d3d3d338;
+    color: #08014d;
+}
+
+span.highlighted{
+    background-color: #99edcc;
+
+}
+
+/* Bloque de navegación */
+/* con esta propiedad modificamos las viñetas de los elementos de lista (ul, ol)*/
+ul{
+    list-style-type: none;
+}    
+
+/* Sección Hero Image */
+/* https://www.w3schools.com/howto/howto_css_hero_image.asp */
+
+/* Sección referencias */
+section.highlighted{
+    border: 3px solid rgba(211, 211, 211, 0.24);
+    border-radius: 10px;
+    box-shadow: 10px 10px 18px grey;
+}
+
+p#bigger-text{
+    font-size: 20px;
+}
+
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}

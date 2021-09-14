@@ -3,55 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <!-- El título de esta etiqueta se mostrará en la pestaña del navegador -->
         <title>Spice Girls</title>
         <!-- Con la etiqueta link podemos insertar un favicon que se mostrará en la pestaña del navegador -->
         <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVl-NZJm2YLmNWyIWxGqCwnpohR6MEiGqT9g&usqp=CAU" type="image/x-icon">
+        <!-- Añadir link a CSS (Cascading StyleSheets) -->
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
-
-
-        <h4> &#127757; ¡Hola Mundo! &#127757; </h4>
-
-        <!-- Este es el encabezado principal de mi página, solo debe haber uno por ficher HTML -->
-        <h1>Spice Girls</h1>
-
-        <p><strong>Spice Girls</strong> es una agrupación inglesa de música <em>pop</em> fundada en 1994 y compuesta por las cantantes <a href="https://es.wikipedia.org/wiki/Geri_Halliwell" target="_blank">Geri Halliwell</a> , Melanie C, Victoria Beckham, Melanie B y Emma Bunton. Con más de 100 millones de discos certificados <a href="#referencias">vendidos<sup>1</sup></a>​, son el grupo femenino más exitoso de la historia de la música y uno de los actos musicales más influyentes durante de la década de 1990, considerado como el grupo femenino más emblemático de la música, debido a su impacto, legado, records e impacto cultural; además de popularizar la expresión feminista <a href="#referencias"><em>Girl Power!</em></a> (¡Chicas al poder!).<sup>2</sup> <sup>3</sup>​​</p>
-
-        <!-- El elemento img no tiene etiqueta de cierre y debe llevar el link a la imagen en su atributo src y un texto descriptivo en su atributo alt -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Spice_Girls_tour_2019.jpg/800px-Spice_Girls_tour_2019.jpg" alt="Spice Girls">
-
-        <p>Llevaron a cabo su carrera entre 1996 y 2001, 2007 y 2008, una aparición en 2012 durante la clausura de los Juegos Olímpicos de Londres 2012, y finalmente entre 2018 y 2019 con una nueva gira, Spice World Tour 2019, ya sin Victoria.</p>
-
-        <!-- En Emmet: Lorem. Utilizamos estos t -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, soluta ab eaque atque laborum quod eos ipsam! Veniam quia natus explicabo atque esse quod eligendi nostrum numquam! Doloremque, enim voluptates.</p>
-        
-        <hr>
-        
-        <!-- Encabezado secundario, puede haber más de uno en el mismo fichero HTML-->
-        <h2>Discografía</h2>
-
-        <!-- En Emmet: ul>li*4 -->
-        <ul>
-            <li>1996: Spice</li>
-            <li>1997: Spiceworld</li>
-            <li>2000: Forever</li>
-            <li>2007: Greatest Hits</li>
-        </ul>
-
-        <hr>
-
-        <!-- Encabezado de tercer nivel de importancia/jerarquía, puede haber más de uno en un mismo fichero HTML -->
-        <h3 id="referencias">Referencias</h3> 
-
-        <!-- En Emmet: ol>li*3 -->
-        <ol>
-            <li>Fuente: <a href="https://www.alfemminile.com/news-gossip/album1331532/come-sono-diventate-le-spice-girls-0.html#p1" target="_blank">https://www.alfemminile.com/news-gossip/album1331532/come-sono-diventate-le-spice-girls-0.html#p1</a></li>
-            <li><cite>Simon Fuller and Judy Craymer plan Spice Girls musical</cite>. BBC News online (Londres). 21 de enero de 2010. Consultado el 26 de octubre de 2011</li>
-            <li>Hoyle, Ben (22 de enero de 2010). <cite>«Viva Forever Mamma Mia creator creates Spice Girls musical»</cite>. The Times (UK). Consultado el 8 de mayo de 2010</li>
-        </ol>
+        <!-- nav>ul>(li.item-list>a)*3  -->
+        <nav>
+            <ul>
+                <li class="item-list"><a href="">Home</a></li>
+                <li class="item-list"><a href="./pages/biography.html">Biography</a></li>
+                <li class="item-list"><a href="./pages/multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav> 
+        <section id="hero-image">
+            <h1>Spice Girls</h1>
+            <p>Back to 90's</p>
+        </section>         
+        <section>
+            <h4> &#127757; ¡Hola Mundo! &#127757; </h4>         
+            <p id="bigger-text"><strong>Spice Girls</strong> es una agrupación inglesa de música <em>pop</em> fundada en 1994 y compuesta por las cantantes <a href="https://es.wikipedia.org/wiki/Geri_Halliwell" target="_blank">Geri Halliwell</a> , Melanie C, Victoria Beckham, Melanie B y Emma Bunton. Con más de 100 millones de discos certificados <a href="#referencias">vendidos<sup>1</sup></a>​, son el grupo femenino más exitoso de la historia de la música y uno de los actos musicales más influyentes durante de la década de 1990, considerado como el grupo femenino más emblemático de la música, debido a su impacto, legado, records e impacto cultural; además de popularizar la expresión feminista <a href="#referencias"><em>Girl Power!</em></a> (¡Chicas al poder!).<sup>2</sup> <sup>3</sup>​​</p>
+            <p class="highlighted">Llevaron a cabo su carrera entre 1996 y 2001, 2007 y 2008, una aparición en 2012 durante la clausura de los Juegos Olímpicos de Londres 2012, y finalmente entre 2018 y 2019 con una nueva gira, Spice World Tour 2019, ya sin Victoria.</p>   
+            <!-- En Emmet: Lorem. Para generar un bloque de texto random de prueba -->
+            <p class="highlighted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, soluta ab eaque atque laborum quod eos ipsam! Veniam quia natus explicabo atque esse quod eligendi nostrum numquam! Doloremque, enim voluptates.</p>          
+            <hr>
+        </section>
+        <section class="highlighted">
+            <!-- Encabezado secundario, puede haber más de uno en el mismo fichero HTML-->
+            <h2>Discografía</h2>
+                <!-- En Emmet: ul>li*4 -->
+            <ul>
+                <li>1996: Spice</li>
+                <li>1997: Spiceworld</li>
+                <li>2000: Forever</li>
+                <li>2007: Greatest Hits</li>
+            </ul>
+        </section>
+        <section>
+            <!-- Encabezado de tercer nivel de importancia/jerarquía, puede haber más de uno en un mismo fichero HTML -->
+            <h3 id="referencias">Referencias</h3> 
+    
+            <!-- En Emmet: ol>li*3 -->
+            <ol>
+                <li>Fuente: <a href="https://www.alfemminile.com/news-gossip/album1331532/come-sono-diventate-le-spice-girls-0.html#p1" target="_blank">https://www.alfemminile.com/news-gossip/album1331532/come-sono-diventate-le-spice-girls-0.html#p1</a></li>
+                <li><cite>Simon Fuller and Judy Craymer plan Spice Girls musical</cite>. BBC News online (Londres). 21 de enero de 2010. Consultado el 26 de octubre de 2011</li>
+                <li>Hoyle, Ben (22 de enero de 2010). <cite>«Viva Forever Mamma Mia creator creates Spice Girls musical»</cite>. The Times (UK). Consultado el 8 de mayo de 2010</li>
+            </ol>
+        </section>
 
         <a href="#">Volver al inicio de la web</a>
     </body>
