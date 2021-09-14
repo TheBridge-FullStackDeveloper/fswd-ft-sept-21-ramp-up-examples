@@ -1,10 +1,5 @@
-/* Selectores (elemento, clase, id) */
-/* Especificidad de selectores (combinar elemento.clase#id */
-/* rgb(147, 78, 168), */
-
 /* Estilos globales */
 body{
-    /* background-color: antiquewhite; */
     background-image: linear-gradient(130deg ,#ffc0cb, #edff8a, #934ea8);
     background-repeat: no-repeat;
     background-size: contain;
@@ -48,6 +43,8 @@ section.highlighted{
 p#bigger-text{
     font-size: 20px;
 }
+
+/* Página biografía */
 
 table, th, td {
     border:1px solid black;
